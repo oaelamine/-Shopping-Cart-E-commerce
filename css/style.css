@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Oswald", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+header {
+	background-color: #654e92;
+	padding: 0.5rem 0;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-content .brand {
+	font-size: 2rem;
+	color: #fff;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul#user_info {
+	display: none;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+	margin-right: 1rem;
+}
+
+/* ************************************ form ************************************ */
+.section-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+}
+
+.section-form h2 {
+	color: #a5c0dd;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	font-weight: normal;
+}
+
+.section-form form input {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-bottom: 1px solid #6c9bcf;
+	margin-bottom: 1.5rem;
+	text-align: center;
+	outline: 0;
+	box-shadow: 0 10px 10px #ddd;
+	-moz-box-shadow: 0 10px 10px #ddd;
+	-webkit-box-shadow: 0 10px 10px #ddd;
+}
+.section-form form input[type="submit"] {
+	text-transform: uppercase;
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid #6c9bcf;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+.section-form form input[type="submit"]:hover {
+	background-color: #6c9bcf;
+	color: #fff;
+	border-color: transparent;
+}
+
+/* ************************************ Landing ************************************ */
+.landing {
+	min-height: 100vh;
+	background: url(../imgs/Landing.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+/* ************************************ home ************************************ */
+
+.home {
+	text-align: center;
+	padding: 2rem 0;
+}
+.home-text {
+	margin-bottom: 2rem;
+}
+
+.home .container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.5rem;
+}
+
+.products {
+	border: 1px solid #e3e6f3;
+	border-radius: 20px;
+	padding: 0.5rem;
+	box-shadow: 0 10px 10px #ddd;
+	-moz-box-shadow: 0 10px 10px #ddd;
+	-webkit-box-shadow: 0 5px 5px #ddd;
+}
+
+.product-item-img {
+	width: 100%;
+	border-radius: 20px;
+	margin-bottom: 0.5rem;
+}
+
+.product-item-desc h2 {
+	font-size: 1.2rem;
+}
+
+.product-item-action {
+	margin-top: 0.5rem;
+}
+.product-item-action .add-to-cart {
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	margin-right: 0.5rem;
+	background-color: #6c9bcf;
+	border-radius: 50px;
+	color: #fff;
+	width: 2.5rem;
+	height: 2.5rem;
+	cursor: pointer;
+}
+
+.product-item-action i {
+	cursor: pointer;
+	font-size: 1.5rem;
+}
